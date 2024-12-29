@@ -5,6 +5,15 @@ html {
     --tertiary-ui-color: #f0b429;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
 .container {
     height: 100%;
     display: grid;
@@ -12,6 +21,7 @@ html {
 }
 
 .header {
+    padding: 10px;
     background-color: var(--primary-ui-color);
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -74,9 +84,28 @@ html {
 }
 
 .sidebar {
+    padding: 10px;
     background-color: var(--secondary-ui-color);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    color: white;
+
+}
+
+.sidebar > * {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-auto-rows: 1fr;
+    row-gap: 1.2em;
+    column-gap: 1em;
+}
+
+.navigation {
+    padding-left: 0;
+}
+
+.navigation > *{
+    list-style: none;
 }
 
 .main-content {
