@@ -1,12 +1,14 @@
 html {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --primary-ui-color: white;
-    --secondary-ui-color: #1992d4;
-    --tertiary-ui-color: #f0b429;
+    --primary-ui-color: #f0fdf4;
+    --secondary-ui-color: #84cc16;
+    --tertiary-ui-color: #a3e635;
+    --background-ui-color: #ecfccb;
 }
 
 body {
-    height: 100%;
+    background-color: var(--background-ui-color);
+    height: 100vh;
     margin: 0;
 }
 
@@ -27,6 +29,8 @@ body {
     grid-row: 1 / 2;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(10px, 30px));
+    box-shadow: 2px 2px 2px 2px #ccd1d8;
+    margin: 0 0 10px 0;
 }
 
 .upper, .lower {
@@ -115,7 +119,7 @@ body {
 
 .main-content {
     padding: 20px;
-    background-color:#e2e9f1;
+    background-color:var(--background-ui-color);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
