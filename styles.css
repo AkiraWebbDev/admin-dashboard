@@ -108,8 +108,138 @@ body {
     list-style: none;
 }
 
+.title {
+    font-weight: bold;
+    margin: 5px 0 10px 0
+}
+
 .main-content {
-    background-color:beige;
+    padding: 20px;
+    background-color:#e2e9f1;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+.content-box {
+    border-radius: 10px;
+    background-color: var(--primary-ui-color);
+    box-shadow: 2px 3px 2px 2px #ccd1d8;
+    padding: 20px;
+}
+
+.projects-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 0 10px 0 0;
+    display: grid;    
+    grid-template-columns: 5px 1fr;
+}
+
+.project-card .color-bar {
+    background-color: var(--tertiary-ui-color);
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    grid-row: 1 / 3;
+}
+
+.project-card .content {
+    padding-left: 10px;
+}
+
+.project-card h4{
+    margin: 30px 0 0 0;
+}
+
+.project-card p {
+    margin: 5px 0 0 0;
+    color: #828080;
+    font-size: 0.9em;
+}
+
+.card-icons {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: right;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+}
+
+
+.anmt-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.anmt-card {
+    padding: 5px;
+}
+
+.anmt-card p {
+    color: #828080;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.anmt-card h5 {
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+.trending-wrapper > *{
+    margin: 10px 0 10px 0;
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.trend-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 1fr;
+    row-gap: 5px;
+}
+
+.trend-card > div {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.trend-card > p {
+    grid-column: 2 / 3;
+    margin: 0;
+}
+
+.long-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.small-title {
+    margin: 0;
+    color:#828080;
+    font-size: 0.9em;
+}
+
+.name-text {
+    margin: 0;
+
 }
